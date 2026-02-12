@@ -5,21 +5,21 @@
 class Gmn < Formula
   desc "A lightweight, non-interactive Gemini CLI written in Go"
   homepage "https://github.com/tomohiro-owada/gmn"
-  version "0.28.0"
+  version "0.28.2"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/tomohiro-owada/gmn/releases/download/v0.28.0/gmn_0.28.0_darwin_amd64.tar.gz"
-      sha256 "5ac5a0b746e4216906c3e9f9116b34311375f01277925f939c4b5933d557b220"
+      url "https://github.com/tomohiro-owada/gmn/releases/download/v0.28.2/gmn_0.28.2_darwin_amd64.tar.gz"
+      sha256 "37fdde5954e4792e87d9b596c51ea07b823c307a443e502229b765a619cfc3ed"
 
       def install
         bin.install "gmn"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/tomohiro-owada/gmn/releases/download/v0.28.0/gmn_0.28.0_darwin_arm64.tar.gz"
-      sha256 "f9002c909bad73f722e9f681cf2e993ba97fb09fd2c7b2fdf25bf488739f84a0"
+      url "https://github.com/tomohiro-owada/gmn/releases/download/v0.28.2/gmn_0.28.2_darwin_arm64.tar.gz"
+      sha256 "1bf7cfd70b54ebcb8c244e5c0d779e49397541a6444b74159ea3c07ac18e6674"
 
       def install
         bin.install "gmn"
@@ -29,15 +29,15 @@ class Gmn < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/tomohiro-owada/gmn/releases/download/v0.28.0/gmn_0.28.0_linux_amd64.tar.gz"
-      sha256 "c0043dea6ecc33cff5f0623c37c8103c8e74b9e3c71f168d17e47cc084fa7240"
+      url "https://github.com/tomohiro-owada/gmn/releases/download/v0.28.2/gmn_0.28.2_linux_amd64.tar.gz"
+      sha256 "73cfb53578a7f2c8fa8599ae0af2836fb9d3ea964641f8050f2f002e0ac36ee3"
       def install
         bin.install "gmn"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/tomohiro-owada/gmn/releases/download/v0.28.0/gmn_0.28.0_linux_arm64.tar.gz"
-      sha256 "9fedc5ce03e7b01a6b4d1dbe0ea67e15c90dbd1e50d7ba415c4e8a1c235c0237"
+      url "https://github.com/tomohiro-owada/gmn/releases/download/v0.28.2/gmn_0.28.2_linux_arm64.tar.gz"
+      sha256 "08ed008936697f14102c438c5b35c6d27512a1139cc4106b4b68e88701314f31"
       def install
         bin.install "gmn"
       end
