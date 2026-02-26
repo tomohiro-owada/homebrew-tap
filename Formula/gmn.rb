@@ -5,23 +5,23 @@
 class Gmn < Formula
   desc "A lightweight, non-interactive Gemini CLI written in Go"
   homepage "https://github.com/tomohiro-owada/gmn"
-  version "0.28.2"
+  version "0.30.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/tomohiro-owada/gmn/releases/download/v0.28.2/gmn_0.28.2_darwin_amd64.tar.gz"
-      sha256 "37fdde5954e4792e87d9b596c51ea07b823c307a443e502229b765a619cfc3ed"
+      url "https://github.com/tomohiro-owada/gmn/releases/download/v0.30.0/gmn_0.30.0_darwin_amd64.tar.gz"
+      sha256 "aacfa64b0009fe4557af7268aa8f39c82e4d3d24cf3dd85aed1269c5e6d63d4a"
 
-      def install
+      define_method(:install) do
         bin.install "gmn"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/tomohiro-owada/gmn/releases/download/v0.28.2/gmn_0.28.2_darwin_arm64.tar.gz"
-      sha256 "1bf7cfd70b54ebcb8c244e5c0d779e49397541a6444b74159ea3c07ac18e6674"
+      url "https://github.com/tomohiro-owada/gmn/releases/download/v0.30.0/gmn_0.30.0_darwin_arm64.tar.gz"
+      sha256 "b066991e6440a65077306470ad82983872ae645e78cba2a905c9b6a58535885a"
 
-      def install
+      define_method(:install) do
         bin.install "gmn"
       end
     end
@@ -29,16 +29,16 @@ class Gmn < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/tomohiro-owada/gmn/releases/download/v0.28.2/gmn_0.28.2_linux_amd64.tar.gz"
-      sha256 "73cfb53578a7f2c8fa8599ae0af2836fb9d3ea964641f8050f2f002e0ac36ee3"
-      def install
+      url "https://github.com/tomohiro-owada/gmn/releases/download/v0.30.0/gmn_0.30.0_linux_amd64.tar.gz"
+      sha256 "38096469fc11d2c19b6819fa6f032f5b4670fb221cb053489899f6a254467d03"
+      define_method(:install) do
         bin.install "gmn"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/tomohiro-owada/gmn/releases/download/v0.28.2/gmn_0.28.2_linux_arm64.tar.gz"
-      sha256 "08ed008936697f14102c438c5b35c6d27512a1139cc4106b4b68e88701314f31"
-      def install
+      url "https://github.com/tomohiro-owada/gmn/releases/download/v0.30.0/gmn_0.30.0_linux_arm64.tar.gz"
+      sha256 "c176d57d8fd7c89287010329454ab054449638008074d767c7b5a9f014cb036a"
+      define_method(:install) do
         bin.install "gmn"
       end
     end
