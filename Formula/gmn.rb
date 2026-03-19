@@ -11,7 +11,7 @@ class Gmn < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/tomohiro-owada/gmn/releases/download/v0.34.0/gmn_0.34.0_darwin_amd64.tar.gz"
-      sha256 "c25e9cb6051aa2e69257a276f22e9599cd4c237602a4830cb30ae9e78d3b9667"
+      sha256 "4af760863406e4db53e0daed26b8e196893f26a751b9c6d2c2639873177a9758"
 
       define_method(:install) do
         bin.install "gmn"
@@ -19,7 +19,7 @@ class Gmn < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/tomohiro-owada/gmn/releases/download/v0.34.0/gmn_0.34.0_darwin_arm64.tar.gz"
-      sha256 "f63df82271eb15f166fb1e4caf8867d09f018b29d2a6adfb56533deee4b63bb9"
+      sha256 "de243a7b3323be9997683367a4e995b3d815be4baf4d450482f783ce7b7890e3"
 
       define_method(:install) do
         bin.install "gmn"
@@ -30,14 +30,14 @@ class Gmn < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/tomohiro-owada/gmn/releases/download/v0.34.0/gmn_0.34.0_linux_amd64.tar.gz"
-      sha256 "b55589d52444367d075dd37f167d801ca0e9054e04a34f6f5e1b8af0c00c325a"
+      sha256 "65895d3f7a005f42f2572016d075d58bb6e428ef8d11acf074ea068e61aed5ed"
       define_method(:install) do
         bin.install "gmn"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/tomohiro-owada/gmn/releases/download/v0.34.0/gmn_0.34.0_linux_arm64.tar.gz"
-      sha256 "71876905b49665c6120d3b5f147c07a3a6cea7276f504e64f951dfd37f4255aa"
+      sha256 "1533373d568f5e5eab6d685da71df1f42be507950648ab09eaf63ee167286b9e"
       define_method(:install) do
         bin.install "gmn"
       end
