@@ -5,21 +5,21 @@
 class Gmn < Formula
   desc "A lightweight, non-interactive Gemini CLI written in Go"
   homepage "https://github.com/tomohiro-owada/gmn"
-  version "0.37.1"
+  version "0.37.2"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/tomohiro-owada/gmn/releases/download/v0.37.1/gmn_0.37.1_darwin_amd64.tar.gz"
-      sha256 "cf82fb31a983b878de95d8f80f470c949b510ce30b94659d95e2dd04fa2a8694"
+      url "https://github.com/tomohiro-owada/gmn/releases/download/v0.37.2/gmn_0.37.2_darwin_amd64.tar.gz"
+      sha256 "9f57991db070e65fa501abec16ed74eaf89c13dd2140264e4b48b27206c20367"
 
       define_method(:install) do
         bin.install "gmn"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/tomohiro-owada/gmn/releases/download/v0.37.1/gmn_0.37.1_darwin_arm64.tar.gz"
-      sha256 "d95f978a04e17485440858a460ca3be21f23b536259c691911d4d5e562a7ea4b"
+      url "https://github.com/tomohiro-owada/gmn/releases/download/v0.37.2/gmn_0.37.2_darwin_arm64.tar.gz"
+      sha256 "0951a8b9dc3220e6ceb27ae3115507ba1ab82c94fc0fb3e06ef3ae81ef41744f"
 
       define_method(:install) do
         bin.install "gmn"
@@ -29,15 +29,15 @@ class Gmn < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/tomohiro-owada/gmn/releases/download/v0.37.1/gmn_0.37.1_linux_amd64.tar.gz"
-      sha256 "d61e61b4a8424046fb3fcbe080d884bf46f038c07cee24a79a4d1a4b4aa41c86"
+      url "https://github.com/tomohiro-owada/gmn/releases/download/v0.37.2/gmn_0.37.2_linux_amd64.tar.gz"
+      sha256 "88e4cf0c6ef7e29e872801ff79697bd1b997238e3adebc08151ecc356d337a5f"
       define_method(:install) do
         bin.install "gmn"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/tomohiro-owada/gmn/releases/download/v0.37.1/gmn_0.37.1_linux_arm64.tar.gz"
-      sha256 "98bb0819b962ff3a581a5fa853f7ef12349a39343e44d11d8f8f56333e1851d0"
+      url "https://github.com/tomohiro-owada/gmn/releases/download/v0.37.2/gmn_0.37.2_linux_arm64.tar.gz"
+      sha256 "d21f5421ef15e83c269f5c36c0fd64c1e1e59f4e00c0f2b1a6f8f435fc29b489"
       define_method(:install) do
         bin.install "gmn"
       end
